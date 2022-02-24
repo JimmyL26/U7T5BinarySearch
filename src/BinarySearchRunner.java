@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BinarySearchRunner
 {
   public static void main(String[] args)
@@ -92,5 +94,26 @@ public class BinarySearchRunner
     index = BinarySearch.binarySearchPrintedCommentary(arr1, 13);
     System.out.println(index);
     System.out.println("----------------------------------------------------");
+
+
+
+    System.out.println("the number 23 was found! it is located at index: " + Arrays.binarySearch(arr, 23));
+    System.out.println("the number 55 was found! it is located at index: " + Arrays.binarySearch(arr, 55));
+    System.out.println("the number 14 was found! it is located at index: " + Arrays.binarySearch(arr, 14));
+    System.out.println("the number 81 was found! it is located at index: " + Arrays.binarySearch(arr, 81));
+    System.out.println("the number 17 was found! it is located at index: " + Arrays.binarySearch(arr, 17));
+    System.out.println("the number -10 was found! it is located at index: " + Arrays.binarySearch(arr, -10));
+    System.out.println("the number 108 was found! it is located at index: " + Arrays.binarySearch(arr, 108));
+    System.out.println("the number 13 was NOT found! " + Arrays.binarySearch(arr, 13));
+
+    double[] doubleArr = {-10.5, -6.3, 0.1, 2.8, 12.15, 14.75, 17.9, 23.95, 35.25, 45.5, 49.35, 55.65, 81.95, 100.2, 108.4};
+    System.out.println("the number 23.95 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 23.95));
+    System.out.println("the number 55.65 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 55.65));
+    System.out.println("the number 14.75 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 14.75));
+    System.out.println("the number 81.95 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 81.95));
+    System.out.println("the number 17.9 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 17.9));
+    System.out.println("the number -10.5 was found! it is located at index: " + Arrays.binarySearch(doubleArr, -10.5));
+    System.out.println("the number 108.4 was found! it is located at index: " + Arrays.binarySearch(doubleArr, 108.4));
+    System.out.println("the number 13.5 was NOT found! " + Arrays.binarySearch(doubleArr, 13.5));
   }
 }
